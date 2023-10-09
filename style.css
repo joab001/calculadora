@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family: "Rubik", sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --bg-color: linear-gradient(180deg, #807ece 0%, #8e7ece 100%);
+  --bg-calculator: #2d2a37;
+  --bg-button: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.05) 0%,
+      rgba(255, 255, 255, 0.05) 100%
+    ),
+    #2d2a37;
+  --bg-special-button: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.05) 0.01%,
+      rgba(255, 255, 255, 0.05) 100%
+    ),
+    #462878;
+  --text-color: #ebebeb;
+}
+
+body {
+  font-size: 1.6rem;
+  background: var(--bg-color);
+  height: 100vh;
+  width: 100vw;
+}
+
+#app {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5.4rem;
+}
+
+#calculator {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  padding: 3.5rem;
+
+  height: 50rem;
+  width: 35.6rem;
+  border-radius: 48px;
+
+  background-color: var(--bg-calculator);
+  box-shadow: 20px 20px 20px 10px #000000d2;
+}
+.operation {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.line-result {
+  display: flex;
+  justify-content: space-between;
+}
+.result {
+  color: #ebebeb;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+}
+.keyboard {
+  display: flex;
+  gap: 1.2rem;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.button {
+  width: 64px;
+  height: 64px;
+
+  padding: 1rem;
+
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+
+  box-shadow: 20px 19px 20px 20px rgb(0 0 0 / 1%),
+    19px 20px 20px 20px rgb(0 0 0 / 4%), 8px 5px 6px 5px rgb(0 0 0 / 10%),
+    0px 2px 4px rgb(0 0 0 / 26%), 0px 0px 2px rgb(0 0 0 / 29%),
+    inset 0px 2px 3px rgb(255 255 255 / 6%);
+
+  font-size: 2.4rem;
+
+  color: var(--text-color);
+}
+.regular {
+  background: var(--bg-button);
+}
+.special {
+  background: var(--bg-special-button);
+}
+
+label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: #6b6b6b;
+}

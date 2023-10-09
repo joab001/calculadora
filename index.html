@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div id="app">
+        <div id="calculator">
+            <div class="display">
+                <label class="operation"></label>
+                <div class="line-result">
+                    <label>=</label>
+                    <p class="result"></p>
+                </div>
+            </div>
+            <div class="keyboard">
+                <div class="col">
+                    <button onclick="clear()" class="button regular">CE</button>
+                    <button onclick="addNum(7)" class="button regular">7</button>
+                    <button onclick="addNum(4)" class="button regular">4</button>
+                    <button onclick="addNum(1)" class="button regular">1</button>
+                    <button onclick="appOperator('+')" class="button regular">+/-</button>
+                </div>
+                <div class="col">
+                    <button onclick="clear()" class="button regular">C</button>
+                    <button onclick="addNum(8)" class="button regular">8</button>
+                    <button onclick="addNum(5)" class="button regular">5</button>
+                    <button onclick="addNum(2)" class="button regular">2</button>
+                    <button onclick="addNum(0)" class="button regular">0</button>
+                </div>
+                <div class="col">
+                    <button onclick="backSpace()" class="button regular"> <- </button>
+                    <button onclick="addNum(9)" class="button regular">9</button>
+                    <button onclick="addNum(6)" class="button regular">6</button>
+                    <button onclick="addNum(3)" class="button regular">3</button>
+                    <button onclick="addOperator(',')" class="button regular">,</button>
+                </div>
+                <div class="col">
+                    <button onclick="addOperator('/')" class="button special">÷</button>
+                    <button onclick="addOperator('*')" class="button special">x</button>
+                    <button onclick="addOperator('-')" class="button special">-</button>
+                    <button onclick="addOperator('+')" class="button special">+</button>
+                    <button onclick="calcresult()" class="button special">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
